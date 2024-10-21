@@ -120,6 +120,7 @@ class simulator:
         :param window: La ventana en la que ocurrió el evento.
         :param xoffset: Desplazamiento en el eje X.
         :param yoffset: Desplazamiento en el eje Y.
+        
         """
         action = mj.mjtMouse.mjMOUSE_ZOOM
         mj.mjv_moveCamera(self.model, action, 0.0, -0.05 * yoffset, self.scene, self.cam)
