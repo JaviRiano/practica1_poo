@@ -9,7 +9,7 @@ import numpy as np
 mouse_x = 0
 mouse_y = 0
 button_left = False
-object_name = 'sphere'  # Nombre del objeto a mover
+object_name = 'balloon'  # Nombre del objeto a mover
 object_id = None
 
 
