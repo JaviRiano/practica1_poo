@@ -2,7 +2,6 @@ from balon import Ball
 from rampa import Rampa
 from simulacion import Simulacion
 
-# Diccionario con configuraciones
 escenarios = {
     "escenario_1": {
         "esferas": [
@@ -16,17 +15,16 @@ escenarios = {
     }
 }
 
-# Cargar el escenario
+
 config = escenarios["escenario_1"]
 
-# Crear objetos
+
 esferas = [Ball(**e) for e in config["esferas"]]
 rampas = [Rampa(**r) for r in config["rampas"]]
 
-# Crear simulación
+
 simulacion = Simulacion(esferas, rampas)
 print(simulacion)
 
-# Correr simulación
 simulacion.correr(delta_t=0.1, duracion=5.0)
 print("Simulación terminada.")

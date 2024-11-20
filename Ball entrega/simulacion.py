@@ -1,6 +1,6 @@
 class Simulacion:
-    def __init__(self, esferas, rampas):
-        self.esferas = esferas  
+    def __init__(self, balon, rampas):
+        self.balon = balon  
         self.rampas = rampas  
         self.tiempo = 0.0
 
@@ -13,11 +13,11 @@ class Simulacion:
 
     def actualizar(self, delta_t):
        
-        for esfera in self.esferas:
+        for esfera in self.balon:
             for rampa in self.rampas:
                 
                 aceleracion = rampa.calcular_aceleracion(esfera.masa)
                 esfera.actualizar_posicion(aceleracion, delta_t)
 
     def __repr__(self):
-        return f"Simulacion(esferas={self.esferas}, rampas={self.rampas})"
+        return f"Simulacion(balon={self.balon}, rampas={self.rampas})"

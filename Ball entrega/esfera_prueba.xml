@@ -1,5 +1,5 @@
 <mujoco>
-    <option gravity="9.81 0 -9.81" />
+    <option gravity="0 0 -9.81" />
     <option density="1.204" viscosity="1.8e-5" integrator="implicit"/>
     <visual>
         <global elevation="-10"/>
